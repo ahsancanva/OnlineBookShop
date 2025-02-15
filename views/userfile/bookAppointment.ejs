@@ -1,0 +1,83 @@
+<%- include('../partials/header') -%>
+
+    <section class="bookAppointment">
+        <h1 class="heading">
+            <a href="/Userdashboard" class="sbtn">User Dashboard</a>
+        </h1>
+        <div class="container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="/image/<%=user.image%>" alt="">
+                </div>
+                <div class="content">
+                    <h3><%=user.author%></h3>
+                    <div class="resg">
+                        <p><%=user.category%></p>
+                    </div>
+                    <div class="check">
+                        <p><%=user.title%></p>
+                        <!-- <span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span> -->
+                    </div>
+                    <a href="/payment?id=<%= user._id %>" class="sbtn">Payment</a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="bookMenu">
+        <div class="container">
+            <div class="menu">
+                <div id="about">About Boook</div>
+
+                <div id="content">
+
+                    <div id="aboutcontent">
+                        <h1>About of <span>Book</span></h1>
+                        <div class="para">
+                            <p><%=user.discription%></p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum odit, totam saepe
+                                aut,
+                                pariatur autem suscipit, commodi cumque ullam reiciendis ducimus necessitatibus?
+                                Accusamus
+                                est dolore, mollitia nam provident ab magni iste nemo, ratione explicabo ipsa voluptate
+                                vero
+                                tenetur enim quos.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum doloribus veniam
+                                repudiandae minus vitae reprehenderit Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Harum doloribus veniam repudiandae minus vitae reprehenderit?</p>
+                        </div>
+                        <h3>BOOK</h3>
+                        <div class="education">
+                            <div class="box">
+                                <h4>2012 -- 2014</h4>
+                                <p>PhD</p>
+                                <p>Allama iqbal Medical College</p>
+                            </div>
+                            <div class="box">
+                                <h4>2011 -- 1012</h4>
+                                <p>M-Phil in Neuroscience</p>
+                                <p>Punjab University lahore</p>
+                            </div>
+                            <div class="box">
+                                <h4>2008 -- 2010</h4>
+                                <p>BSc in Neuroscience</p>
+                                <p>Allama iqbal Medical College</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <%- include('../partials/footer') -%>
